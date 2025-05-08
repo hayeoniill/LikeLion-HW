@@ -28,11 +28,7 @@ export const BackBtn = styled.div`
   margin-top: 28px;
   margin-left: 26px;
 `;
-export const Content = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
+
 export const Title = styled.input`
   width: 300px;
   height: 33px;
@@ -49,6 +45,11 @@ export const Title = styled.input`
   letter-spacing: -0.4px;
   outline: none;
   background: transparent;
+`;
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 export const ContentBox = styled.textarea`
   margin-top: 19px;

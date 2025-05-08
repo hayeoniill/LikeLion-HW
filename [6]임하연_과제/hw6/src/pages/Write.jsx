@@ -8,11 +8,13 @@ const Write = () => {
   const[title,setTitle] = useState("");
   const [content,setContent] = useState("");
 
+  const date = new Date().toLocaleDateString();
+
   const handleWrite = () => {
     console.log("제목:" , title);
+    console.log("날짜: ",date);
     console.log("내용:" , content);
-
-  }
+  }  
   const goBack = () => {
     navigate(`/`);
   };
@@ -32,15 +34,14 @@ const Write = () => {
         value = {title}
         onChange={(e)=>{setTitle(e.target.value)}}/>
         <W.ContentBox placeholder="내용 입력"
-        value = {content}
-        onChange={(e)=>{setContent(e.target.value)}} />
+          value = {content}
+          onChange={(e)=>{setContent(e.target.value)}}>
+        </W.ContentBox>
         <W.WriteBtn onClick = {handleWrite}>작성하기</W.WriteBtn>
       </W.Content>
     </W.Box>
   </W.Container>
   );
 };
-
-
 
 export default Write;
