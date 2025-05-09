@@ -28,7 +28,11 @@ export const BackBtn = styled.div`
   margin-top: 28px;
   margin-left: 26px;
 `;
-
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
 export const Title = styled.input`
   width: 300px;
   height: 33px;
@@ -46,13 +50,8 @@ export const Title = styled.input`
   outline: none;
   background: transparent;
 `;
-export const Content = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
-export const ContentBox = styled.textarea`
-  margin-top: 19px;
+export const ContentBox = styled.div`
+ margin-top: 19px;
   width: 262px;
   height: 447px;
   flex-shrink: 0;
@@ -61,17 +60,22 @@ export const ContentBox = styled.textarea`
   background: #fff;
   box-shadow: 0px 4px 5px 0px rgba(255, 140, 0, 0.1);
   color: #535353;
+  padding: 15px;
+  `;
+export const ContentInputBox = styled.textarea`
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
   font-family: Pretendard;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: -0.3px;
-  padding: 15px;
-  outline : none;
-  resize:none;
+  letter-spacing: -0.3px; 
+  resize: none;
 `;
-
 export const Date = styled.div`
   color: #ff8400;
   text-align: center;

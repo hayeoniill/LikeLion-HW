@@ -33,15 +33,21 @@ const Write = () => {
         <W.Title placeholder="제목을 입력하세요"
         value = {title}
         onChange={(e)=>{setTitle(e.target.value)}}/>
-        <W.ContentBox placeholder="내용 입력"
+        <W.ContentBox>
+          <W.Date>{date}</W.Date>
+          
+          <W.ContentInputBox placeholder="내용 입력"
           value = {content}
-          onChange={(e)=>{setContent(e.target.value)}}>
+          onChange={(e)=>{setContent(e.target.value)}} />          
         </W.ContentBox>
         <W.WriteBtn onClick = {handleWrite}>작성하기</W.WriteBtn>
+
       </W.Content>
     </W.Box>
   </W.Container>
   );
 };
+
+
 
 export default Write;
