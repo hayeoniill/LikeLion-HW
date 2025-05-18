@@ -104,7 +104,8 @@ function goMain() {
 function printContents(){
     const title = document.getElementById("title");
     const contents = document.getElementById("contentInputBox");
-    const dateString = printDate(); 
+    const dateString = printDate();
+     
     console.log("제목:", title.value);
     console.log("내용:", contents.value);
     console.log("날짜:", dateString);
