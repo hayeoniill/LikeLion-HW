@@ -65,7 +65,7 @@ var posts = [
 function makeLetterWrapper() {
     for (let i = 0; i < posts.length; i++) {
         document.writeln(`
-            <div class='letterWrapper' onclick = "showRead(${posts[i].postId})">
+            <div onclick = "showRead(${posts[i].postId})">
                 <h3 class = 'letter' >${posts[i].title}</h3>
             </div>
         `);
